@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="/assets/partly_cloudy_day_FILL0_wght500_GRAD0_opsz48.png"/> <!-- Favicon || displayed next to the page title in the browser tab -->
+    <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+
+    <div class="center">
+        <div>
+            <img src="/assets/weather_logo.png" alt="Partly_cloudy_logo" class="img">
+            <form id="form" class="form">
+                <input type="search" id="query" value="" onfocus="this.value=''" placeholder="Search City Name..">
+                <button>Search</button>
+            </form>
+        </div>
+        
+        <hr width="30%" noshade>
+
+        <div style="padding: 4%;">
+            <div class="info box">
+                <p id="location" class="location"></p>
+                <p id="temp" class="temp"></p>
+                <p id="description" class="description"></p>
+            </div>
+        </div>
+
+    </div>
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
