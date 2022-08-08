@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="/assets/partly_cloudy_day_FILL0_wght500_GRAD0_opsz48.png"/> <!-- Favicon || displayed next to the page title in the browser tab -->
+    <link rel="stylesheet" href="/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="container txt">
+        <div class="top">
+            <img src="/assets/weather_logo.png" alt="Partly_cloudy_logo" class="img">
+            <form id="form" class="form" autocomplete="off">
+                <input type="search" id="query" value="" onfocus="this.value=''" autofocus placeholder="Search City Name...">
+                <!-- <button><i class="fa fa-search" style="font-size:28px; padding: 4px;"></i></button> -->
+                <button><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        
+
+        <div class="box">
+            <div class="info">
+                <p id="city" class="city"></p>
+                <p id="country" class="country"></p>
+                <p id="date" style="font-style: italic;"></p>
+                <p id="temp" class="temp"></p>
+                <p id="feels-temp" class="feels"></p>
+                <p id="main-description" class="main-description"></p>
+                <p id="description" class="description"></p>
+            </div>
+
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <p id="min-temp"></p>
+                            <p id="max-temp"></p>
+                            <p id="humid"></p>
+                            <p id="cloudiness"></p>
+                        </td>
+                        <td style="text-align: right;">            
+                            <p id="sunrise"></p>
+                            <p id="sunset"></p>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
