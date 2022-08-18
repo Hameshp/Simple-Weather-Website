@@ -1,0 +1,201 @@
+body {
+    background-color: #02A2F7;
+    color: white;
+}
+
+hr {
+    height:1px; 
+    background-color:white; 
+    border-color: white; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+table {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+}
+
+td {
+    width: 20%;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.container {
+    margin: auto;
+    width: 30%;
+    /* border: 3px solid green; */
+}
+
+.top {
+    text-align: center;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.form {
+    margin-top: 20px;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form input {
+    float: left;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid white;
+    border-width: 0 0 3px;
+    outline: none;
+    width: 80%;
+    color: white;
+    background-color: transparent;
+}
+
+.form input::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+  
+.form button {
+    width: 20%;
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+    border: 1px solid white;
+    border-width: 0 0 3px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+/* --------------------------------------------------------------------------------- */
+
+.txt {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.logo {
+    margin-top: 30px;
+    width: 40%;
+    height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.city {
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.country {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.temp {
+    font-size: 100px;
+    padding-top: 2%;
+    margin: 0px;
+}
+
+.feels {
+    margin-top: 0px;
+}
+
+.main-description {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1%;
+}
+
+.description {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin-top: 0px;
+}
+
+.info {
+    padding: 2%;
+    text-align: center;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.box {
+    border: 2px solid white;
+    min-width: fit-content;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+}
+
+.boxclear{
+    background: linear-gradient(#47bfff, #0055c4);
+}
+.boxcloudy {
+    background: linear-gradient(#9bbac5, #63747c);
+}
+.boxrainy {
+    background: linear-gradient(#0063e6, #003274);
+}
+
+
+.forcast {
+    text-align: center;
+}
+
+
+/* --------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1000px) {
+
+    hr {
+        height:1px; 
+        background-color:white; 
+        border-color: white; 
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .container {
+        margin: auto;
+        width: 50%;
+        /* border: 3px solid green; */
+    }
+
+    .form input {
+        width: 60%;
+        padding: 6px;
+    }
+
+    .img {
+        margin-top: 30px;
+        height: 40%;
+        width: 40%;
+    }
+    
+    
+}
