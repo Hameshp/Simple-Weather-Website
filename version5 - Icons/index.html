@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="/assets/partly_cloudy_day_FILL0_wght500_GRAD0_opsz48.png"/> <!-- Favicon || displayed next to the page title in the browser tab -->
+    <link rel="stylesheet" href="/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+
+    <div class="container txt">
+        <div class="top">
+            <img src="/assets/weather_logo.png" alt="Partly_cloudy_logo" class="logo">
+            <form id="form" class="form" autocomplete="off">
+                <input type="search" id="query" value="" onfocus="this.value=''" autofocus placeholder="Search City Name...">
+                <button><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        
+        <div class="box">
+            <div class="info">
+                <p id="city" class="city"></p>
+                <p id="country" class="country"></p>
+                <p id="date" style="font-style: italic;"></p>
+
+                <p id="temp" class="temp"></p>
+
+                <p id="feels-temp" class="feels"></p>
+                <p id="main-description" class="main-description"></p>
+                <p id="description" class="description"></p>
+            </div>
+
+            <div>
+                <table>
+                    <tr>
+                        <td style="text-align: left;">
+                            <p id="min-temp"></p>
+                            <p id="max-temp"></p>
+                            <p id="humid"></p>
+                            <p id="cloudiness"></p>
+                        </td>
+                        <td style="text-align: right;">            
+                            <p id="sunrise"></p>
+                            <p id="sunset"></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <hr style="margin-bottom: 1%; margin-top: 1%;">
+
+            <div class="forcast">
+                <table >
+                    <tr>
+                        <td>
+                            <p id="dayOneDate"></p>
+                            <span id="dayOneDesc" class="material-symbols-outlined flip" style="font-size: 46px;"></span>
+                            <p id="dayOneTemp" style="margin-top: 5%;"></p>
+                        </td>
+                        <td>
+                            <p id="dayTwoDate"></p>
+                            <span id="dayTwoDesc" class="material-symbols-outlined flip" style="font-size: 46px;"></span>
+                            <p id="dayTwoTemp" style="margin-top: 5%;"></p>
+                        </td>
+                        <td>
+                            <p id="dayThreeDate"></p>
+                            <span id="dayThreeDesc" class="material-symbols-outlined flip" style="font-size: 46px;"></span>
+                            <p id="dayThreeTemp" style="margin-top: 5%;"></p>
+                        </td>
+                        <td>
+                            <p id="dayFourDate"></p>
+                            <span id="dayFourDesc" class="material-symbols-outlined flip" style="font-size: 46px;"></span>
+                            <p id="dayFourTemp" style="margin-top: 5%;"></p>
+                        </td>
+                        <td>
+                            <p id="dayFiveDate"></p>
+                            <span id="dayFiveDesc" class="material-symbols-outlined flip" style="font-size: 46px;"></span>
+                            <p id="dayFiveTemp" style="margin-top: 5%;"></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
