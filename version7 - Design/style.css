@@ -1,0 +1,261 @@
+body {
+    background-color: #02A2F7;
+    color: white;
+}
+
+hr {
+    height:1px; 
+    background-color:white; 
+    border-color: white; 
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 80%;
+}
+
+table {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+}
+
+td {
+    width: 20%;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.container {
+    margin: auto;
+    width: 30%;
+}
+
+.top {
+    text-align: center;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.form {
+    margin-top: 20px;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form input {
+    float: left;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid white;
+    border-width: 0 0 3px;
+    outline: none;
+    width: 80%;
+    color: white;
+    background-color: transparent;
+}
+
+.form input::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+  
+.form button {
+    width: 20%;
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+    border: 1px solid white;
+    border-width: 0 0 3px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+/* --------------------------------------------------------------------------------- */
+
+.txt {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.logo {
+    margin-top: 30px;
+    width: 40%;
+    height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.units {
+    margin-top: 0%;
+    text-align: center;
+}
+
+.units button {
+    color: white;
+    border: none;
+    font-size: 14px;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.units .disabled {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.units .disabled:hover {
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.city {
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-bottom: 0px;
+    position: relative;
+    text-align: left;
+}
+
+.country {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    text-align: left;
+}
+
+.date {
+    font-size: 16px;
+    text-align: right;
+}
+
+.temp {
+    font-size: 100px;
+    margin: 0px;
+}
+
+.feels {
+    margin-top: 0px;
+    font-size: 16px;
+}
+
+.main-description {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1%;
+    margin-top: 0%;
+}
+
+.description {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.info {
+    padding: 2%;
+    text-align: center;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.box {
+    border: 2px solid white;
+    min-width: fit-content;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+}
+
+.boxclear{
+    background: linear-gradient(#47bfff, #0055c4);
+}
+.boxcloudy {
+    background: linear-gradient(#a6c6d1, #515f66);
+}
+.boxrainy {
+    background: linear-gradient(#0063e6, #003274);
+}
+
+.forcast {
+    text-align: center;
+}
+
+.flip {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* --------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1300px) {
+
+    .container {
+        margin: auto;
+        width: 50%;
+    }
+
+    .form input {
+        width: 80%;
+        padding: 6px;
+    }
+
+    .form button {
+        width: 20%;
+        padding: 6px;
+    }
+
+    .img {
+        margin-top: 30px;
+        height: 40%;
+        width: 40%;
+    }
+
+    .box {
+        min-width: fit-content;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 6%;
+    }
+    
+    
+}
